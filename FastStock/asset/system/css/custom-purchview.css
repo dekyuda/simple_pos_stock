@@ -1,0 +1,375 @@
+div.tbody:nth-child(even){
+	background-color: #ecf0f1;
+}
+
+div.tbody:nth-child(odd){
+	background-color: white;
+}
+
+.note{
+	margin-top: -45px;
+}
+
+textarea.po_note{
+	float: left;
+	width: 100%;
+	height: auto;
+	border: none;
+	outline: none;
+	resize: none;
+}
+
+input:read-only{
+	border: none;
+	background-color: transparent;
+}
+
+.pay-main{
+	float: right;
+
+}
+
+.pay-grand{
+	float: left;
+	width: auto;
+	border-top: 1.5px solid #4c6385;
+	margin: 0px;
+}
+
+
+.main-payment{
+	display: block;
+	float: left;
+	width: 50%;
+	max-width: 50%;
+	border-top: 1.5px solid #4c6385;
+	margin-top: -57px;
+
+}
+
+.pay{
+	width: 100%;
+}
+
+.pay.grand{
+	border-top: 2px solid #4c6385;
+	display: block;
+	padding-top: 0px;
+}
+
+.tax-box{
+	border: none;
+}
+
+/* For Button */
+.print{
+	border: none;
+	background-color: #48647C;
+	color: white;
+	padding: 11px;
+	position: absolute;
+    right: 10;
+}
+
+.cancel{
+	position: absolute;
+}
+
+.top-button > button.cancel{
+	right: 80;
+}
+
+.top-button{
+	display: block;
+	position: inherit;
+}
+
+/*main product*/
+.cell9 {
+	text-align: right;
+	padding-right: 3em;
+}
+
+.cell9 input{
+	text-align: right;
+}
+
+.cell6{
+	text-align: right;
+	padding-right: 25px;
+}
+
+.cell6 input{
+	text-align: right;
+}
+
+.cell7 input{
+	text-align: center;
+}
+
+.total{
+	padding-right: 0.5em;
+}
+
+/*Detail Grand Total || Stock In Footer Input || Main Payment*/
+.po_sub_total{
+	display: block;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.po_tax_val{
+	text-align: right;
+	padding-right: 15px;
+}
+
+.po_disc{
+	text-align: right;
+	position: relative;
+	display: block;
+}
+
+.po_delv{
+	text-align: right;
+	padding-right: 15px;
+}
+
+.po_grandtotal{
+	text-align: right;
+	padding-right: 15px;
+}
+
+
+/* For Print Paper*/
+#print{
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: rgba(2, 2, 2, 0.7);
+	z-index: 1010;
+	overflow: auto;
+	//opacity: 1;
+}
+
+.print-main{
+	background-color: white;
+	color: #000;
+	display: block;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 70%;
+	margin: auto;
+	opacity: 1;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+.print-header{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+.print-header-comp{
+	display: block;
+	float: left;
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+
+}
+
+.print-header-purchase{
+	display: block;
+	float: left;
+	width: 50%;
+	height: auto;
+	margin-left: 5%;
+	background: lightgrey;
+	padding: 1.2em;
+}
+
+.comp-logo{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+img.comp-logo{
+	width: 60%;
+	padding-top: 1em;
+}
+
+.comp-detail{
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: right;
+	padding-right: 2em;
+}
+
+//product
+
+.print-main > .print-product{
+	display: block;
+	position: relative;
+	width: 90%;
+	margin: auto;
+	float: left;
+}
+
+.product-detail-print{
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+	width: 90%;
+}
+
+.print-product-header{
+	display: block;
+	width: 100%;
+	float: left;
+	border-top: 2.5px solid #000;
+	border-bottom: 1.5px solid #000;
+	font-weight: bold;
+	line-height: 2.2em;
+
+}
+
+.print-product-detail{
+	display: block;
+	width: 100%;
+	float: left;
+	padding: 0.2em;
+}
+
+.tb1{
+	float: left;
+	width: 8%;
+	display: inline-block;
+	text-align: center;
+}
+
+.tb2{
+	float: left;
+	width: 35%;
+	padding-left: 1.5em;
+	display: inline-block;
+}
+
+.tb3{
+	float: left;
+	width: 15%;
+	display: inline-block;
+}
+
+.tb4{
+	float: left;
+	width: 10%;
+	display: inline-block;
+}
+
+.tb5{
+	float: left;
+	width: 7%;
+	display: inline-block;
+	text-align: center;
+}
+
+.tb6{
+	float: left;
+	width: 25%;
+	display: inline-block;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.tb1.ppd{
+	padding-right: 1em;
+	text-align: right;
+}
+
+.tb3.ppd{
+	text-align: right;
+	padding-right: 2em;
+}
+
+.tb4.ppd{
+	text-align: right;
+	padding-right: 2em;
+}
+
+.tb5.ppd{
+	text-align: center;
+}
+
+//Footer
+.print-footer{
+	display: block;
+	float: left;
+}
+
+.footer-grandtotal{
+	width: 50%;
+	float: right;
+	display: inline-block;
+	border-top: 1.5px solid #000;
+	border-bottom: 2.5px solid #000;
+	margin-right: 5%;
+	font-weight: bold;
+}
+
+.grand-title{
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+.grand-number{
+	float: left;
+	width: 50%;
+	text-align: right;
+	padding-right: 1em;
+}
+
+
+/* Button */
+.print-button{
+	display: block;
+	border-top: 0.5px dashed lightgrey;
+	width: 100%;
+	bottom: 0;
+	float: left;
+	margin-top: 50px;
+}
+
+button.final-print{
+	margin-right: 5%;
+	margin-top: 20px;
+	float: right;
+	border: none;
+	background-color: #1ABC9C;
+	color: white;
+	padding: 0.5em;
+	font-size: 24px;
+	border-bottom: 3px solid #16A085;
+}
+
+button.cancel-print{
+	float: right;
+	padding: 0.5em;
+	font-size: 24px;
+	color: white;
+	background-color: #E74C3C;
+	border: none;
+	margin-top: 20px;
+	margin-right: 20px;
+	border-bottom: 3px solid #C0392B;
+}
+

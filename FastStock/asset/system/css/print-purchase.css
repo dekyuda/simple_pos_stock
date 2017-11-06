@@ -1,0 +1,218 @@
+@media print{
+	/* For Print Paper*/
+	body {
+        -webkit-print-color-adjust: exact;
+	}
+
+	#top{
+		display: none;
+
+	}
+
+	#main{
+		display: none;
+	}
+
+	#content-wrapper{
+		display: none;
+	}
+
+	#print{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		background-color: rgba(2, 2, 2, 0.7);
+		z-index: 1010;
+}
+
+	.print-main{
+		background-color: white;
+		color: #000;
+		display: block;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		margin: auto;
+		opacity: 1;
+		padding-bottom: 30px;
+		overflow: auto;
+	}
+
+	.print-header{
+		display: block;
+		width: 100%;
+		height: auto;
+		background-color: #fff;
+	}
+
+	.print-header-comp{
+		display: block;
+		float: left;
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+
+	}
+
+	.print-header-purchase{
+		display: block;
+		float: left;
+		width: 50%;
+		height: auto;
+		margin-left: 5%;
+		background-color: lightgrey !important;
+		-webkit-print-color-adjust: exact; 
+		padding: 1.2em;
+	}
+
+	.comp-logo{
+		float: left;
+		display: block;
+		width: 50%;
+	}
+
+	img.comp-logo{
+		width: 60%;
+		padding-top: 1em;
+	}
+
+	.comp-detail{
+		float: left;
+		display: block;
+		width: 50%;
+		text-align: right;
+		padding-right: 2em;
+	}
+
+	
+	.print-main > .print-product{
+		display: block;
+		position: relative;
+		width: 100%;
+		margin: auto;
+		float: left;
+	}
+
+	.product-detail-print{
+		float: left;
+		margin-left: auto;
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.print-product-header{
+		display: block;
+		width: 100%;
+		float: left;
+		border-top: 2.5px solid #000;
+		border-bottom: 1.5px solid #000;
+		font-weight: bold;
+		line-height: 2.2em;
+
+	}
+
+	.print-product-detail{
+		display: block;
+		width: 100%;
+		float: left;
+		padding: 0.2em;
+	}
+
+	.tb1{
+		float: left;
+		width: 13%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.tb2{
+		float: left;
+		width: 30%;
+		padding-left: 1.5em;
+		display: inline-block;
+	}
+
+	.tb3{
+		float: left;
+		width: 15%;
+		display: inline-block;
+	}
+
+	.tb4{
+		float: left;
+		width: 10%;
+		display: inline-block;
+	}
+
+	.tb5{
+		float: left;
+		width: 7%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.tb6{
+		float: left;
+		width: 25%;
+		display: inline-block;
+		text-align: right;
+		padding-right: 1em;
+	}
+
+	.tb1.ppd{
+		padding-right: 1em;
+		text-align: right;
+	}
+
+	.tb3.ppd{
+		text-align: right;
+		padding-right: 2em;
+	}
+
+	.tb4.ppd{
+		text-align: right;
+		padding-right: 2em;
+	}
+
+	.tb5.ppd{
+		text-align: center;
+	}
+
+	.print-footer{
+		display: block;
+		
+	}
+
+	.footer-grandtotal{
+		width: 45%;
+		float: right;
+		display: block;
+		border-top: 1.5px solid #000;
+		border-bottom: 2.5px solid #000;
+		margin-right: 1em;
+		font-weight: bold;
+	}
+
+	.grand-title{
+		float: left;
+		width: 50%;
+		text-align: right;
+	}
+
+	.grand-number{
+		float: left;
+		width: 50%;
+		text-align: right;
+		padding-right: -0.5em;
+	}	
+
+	/* Button */
+	.print-button{
+		display: none;
+	}
+}

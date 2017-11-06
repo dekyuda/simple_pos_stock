@@ -1,0 +1,43 @@
+Concept of Chart of Account (C.O.A);
+
+Asset
+	Activa
+		Bank	-	Debet			
+		Cash	-	Debet
+		
+		Employee Loan	- Debet
+	Fixed Asset
+		Tools	- Debet
+		Glass	- Debet
+Liabilities
+	Tax		- 	Credit
+	payroll - 	Credit
+	Loan	-	Credit
+Equity
+	Capital	-	Credit
+	Retained Earning (Laba Rugi from Revenue - Expenses - Other Expenses)	-	Credit
+	
+Revenue
+	Revenue by Category	-	credit
+	Revenue Other 	-	Credit
+Expenses
+	Cost
+		Cost of Sale	-	Credit
+		Cost Other 		-	Credit
+	Expense
+		Expense Land or Building	-	Credit
+		Expense Electry and Water	- 	Credit
+		Expense Phone and Internet	-	Credit
+		Expense Main Other			-	Credit
+Other Expense
+	Other Expenses 				
+		Other Expense Material 			-	Credit
+		Other Expense Cost at Minimum	-	Credit
+		Other Expense Cost at Maximum	-	Credit
+	
+
+
+
+
+Neraca : 1 = 2+3
+Laba Rugi (Revenue) : 4 - 5 -6	

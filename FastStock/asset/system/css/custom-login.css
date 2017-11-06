@@ -1,0 +1,204 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+#wrapper{
+	height: 100%;
+	max-width: 100%;
+	background-color: white;
+}
+
+.title-header{
+	max-width: 100%;
+	height: auto;
+	padding: 2px;
+	background-color: darkblue;
+}
+
+.title-header h1{
+	color: white;
+	margin-left: 20px;
+	font-style: italic;
+	top: 0;
+	margin-top: -3px;
+}
+
+
+
+.login-container{
+	margin: auto;
+	width: 400px;
+	
+	background-color: white;
+	margin-top: 5%;
+}
+
+.form-header h2{
+	text-align: center;
+	margin: auto;
+	font-family: arial;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+input[type=submit]{
+	border: none;
+	background: blue;
+	color: white;
+	width: 80%;
+	height: 40px;
+	padding: 5px;
+	margin-top: 20px;
+	font-size: 24px;
+	margin-left: 10%;
+}
+
+input{
+	border: none;
+	outline: none;
+}
+
+input:focus{
+	border: none;
+	outline: none;
+	border-bottom: 1.5px solid #2C3E50;
+}
+
+input.password{
+	border-bottom: 1.5px solid grey;
+	padding: 10px;
+	width: 70%;
+	font-weight: bold;
+	margin-left: -4px;
+}
+
+input.username{
+	border-bottom: 1.5px solid grey;
+	padding: 10px;
+	width: 70%;
+	font-weight: bold;
+	margin-left: -4px;
+	margin-bottom: 5px;
+	outline: none;
+}
+
+input.username:focus{
+	border-bottom: 1.5px solid #2980B9;
+	outline: none;
+}
+
+input.password:focus{
+	border-bottom: 1.5px solid #2980B9;
+	outline: none;
+}
+
+
+
+/*input.username::before{
+	font-family: 'FontAwesome';
+	position: relative;
+	left: -5;
+	content: "&#xf007";
+}*/
+
+i{
+	border-bottom: 1.5px solid grey;
+	padding: 11px;
+	margin-left: 10%;
+}
+
+@-moz-document url-prefix(){
+	i{
+		padding: 10.5px;
+	}
+}
+
+.error-massages{
+	outline: none;
+    border:1px solid red;
+    box-shadow: 0 0 10px #ff003c;
+}
+
+label.userlabel:before{
+	font-family: FontAwesome;
+	content: '\f007';
+	border-bottom: 1.5px solid #000;
+	padding: 11px;
+	position: relative;
+	display: inline-block;
+	color: black;
+}
+
+label.passlabel:before{
+	font-family: FontAwesome;
+	content: '\f023';
+	border-bottom: 1.5px solid #000;
+	padding: 11px;
+	position: relative;
+	display: inline-block;	
+}
+
+
+input.username:focus .passlabel:before{
+	color: white;
+}
+
+.userlabel{
+	margin-left: 40px;
+}
+
+.passlabel{
+	margin-left: 40px;
+}
+
+
+/* Error handle */
+.form-status {
+	display: block;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.form-error-msg{
+	background-color: #E74C3C;
+	color: white;
+	display: block;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.form-success-msg{
+	background-color: #16A085;
+	color: white;
+	display: block;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*label[for=username]:focus,
+label[for=username]:active{
+	color: white;
+}*/
+
+input:focus + label:before{
+	color: white;
+}
+
+input.username:focus ~ label[for=username]:focus{
+	color: white;
+}
+
+label:hover,
+label:focus{
+	color: white;
+}
+

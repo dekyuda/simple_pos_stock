@@ -1,0 +1,43 @@
+
+
+		//fungsi menambah input field
+		var i = 3;
+		$('.add-table').click(function(){
+			//var i = $('.table .tbody').size();
+			
+			//alert(i);
+			$('.table').append(
+				'<div class="tbody" counter="'+i+'">'
+					+'<div class="cell cell1">'+
+						'<input type="text" name="product_name" class="name">'+
+					'</div>'+
+					'<div class="cell cell2">'+
+						'<input type="text" readonly name="product_category" class="name">'+
+					'</div>'+
+					'<div class="cell cell3">'+
+						'<input type="number" name="product_cost" class="cost">'+
+					'</div>'+
+					'<div class="cell cell4">'+			
+					'<input type="number" name="product_qty" class="qty">'+
+					'</div>'+
+					'<div class="cell cell5">'+	
+					'<input type="text" readonly name="product_unit" class="unit">'+
+					'</div>'+
+					'<div class="cell cell6">'+
+					'<input type="text" readonly name="sub_total" class="sub_total">'+
+					'</div>'+
+					'<div class="cell cell7">'+
+					'<input type="number" name="product_disc" class="disc">'+
+					'</div>'+
+					'<div class="cell cell8" align="center">'+
+					'<input type="checkbox" name="product_tax" class="tax">'+
+					'</div>'+
+					'<div class="cell cell9">'+
+					'<input type="text" readonly name="total" class="total">'+
+					'</div>'+
+					'<div class="cell cell10"  counter="'+i+'" align="center"><b class="counter'+i+'">x</b></div>'+
+				'</div>'
+				);
+				i++;
+			return false;
+		});

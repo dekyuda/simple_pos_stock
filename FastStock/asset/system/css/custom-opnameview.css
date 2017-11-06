@@ -1,0 +1,235 @@
+<style>
+/* For Print Paper*/
+#print{
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0%;
+	bottom: 0;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 10010;
+	overflow: auto;
+	opacity: 1;
+}
+
+.print-main{
+	background-color: white;
+	color: #000;
+	display: block;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 70%;
+	margin: auto;
+	opacity: 1;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+.print-header{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+.print-header-comp{
+	display: block;
+	float: left;
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+
+}
+
+.print-header-purchase{
+	display: block;
+	float: left;
+	width: 50%;
+	height: auto;
+	margin-left: 5%;
+	background: lightgrey;
+	padding: 1.2em;
+}
+
+.comp-logo{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+img.comp-logo{
+	width: 60%;
+	padding-top: 1em;
+}
+
+.comp-detail{
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: right;
+	padding-right: 2em;
+}
+
+/*product*/
+
+.print-main > .print-product{
+	display: block;
+	position: relative;
+	width: 90%;
+	margin: auto;
+	float: left;
+}
+
+.product-detail-print{
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+	width: 90%;
+}
+
+.print-product-header{
+	display: block;
+	width: 100%;
+	float: left;
+	border-top: 2.5px solid #000;
+	border-bottom: 1.5px solid #000;
+	font-weight: bold;
+	line-height: 2.2em;
+
+}
+
+.print-product-detail{
+	display: block;
+	width: 100%;
+	float: left;
+	padding: 0.2em;
+}
+
+.tb1{
+	float: left;
+	width: 18%;
+	display: inline-block;
+	text-align: left;
+}
+
+.tb2{
+	float: left;
+	width: 35%;
+	padding-left: 1.5em;
+	display: inline-block;
+}
+
+.tb3{
+	float: left;
+	width: 10%;
+	display: inline-block;
+	text-align: center;
+}
+
+.tb4{
+	float: left;
+	width: 10%;
+	display: inline-block;
+}
+
+.tb5{
+	float: left;
+	width: 7%;
+	display: inline-block;
+	text-align: center;
+}
+
+.tb6{
+	float: left;
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	padding-right: 1em;
+}
+
+.tb1.ppd{
+	//padding-right: 1em;
+	text-align: left;
+}
+
+.tb3.ppd{
+	text-align: center;
+}
+
+.tb4.ppd{
+	text-align: center;
+	padding-right: 2em;
+}
+
+.tb5.ppd{
+	text-align: center;
+}
+
+//Footer
+.print-footer{
+	display: block;
+	float: left;
+}
+
+.footer-grandtotal{
+	width: 50%;
+	float: right;
+	display: inline-block;
+	border-top: 1.5px solid #000;
+	border-bottom: 2.5px solid #000;
+	margin-right: 5%;
+	font-weight: bold;
+}
+
+.grand-title{
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+.grand-number{
+	float: left;
+	width: 50%;
+	text-align: right;
+	padding-right: 1em;
+}
+
+
+/* Button */
+.print-button{
+	display: block;
+	border-top: 0.5px dashed lightgrey;
+	width: 100%;
+	bottom: 0;
+	float: left;
+	margin-top: 50px;
+}
+
+button.final-print{
+	margin-right: 5%;
+	margin-top: 20px;
+	float: right;
+	border: none;
+	background-color: #1ABC9C;
+	color: white;
+	padding: 0.5em;
+	font-size: 24px;
+	border-bottom: 3px solid #16A085;
+}
+
+button.cancel-print{
+	float: right;
+	padding: 0.5em;
+	font-size: 24px;
+	color: white;
+	background-color: #E74C3C;
+	border: none;
+	margin-top: 20px;
+	margin-right: 20px;
+	border-bottom: 3px solid #C0392B;
+}
+
+</style>

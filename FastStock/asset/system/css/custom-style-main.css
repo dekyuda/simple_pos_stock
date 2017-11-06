@@ -1,0 +1,18 @@
+<style>
+#wrapper{
+	width: 100%;
+}
+
+.header-logos{
+	max-width: 100%;
+	height: auto;
+}
+.header-exit{
+	position: absolute;
+	display: block;
+	right: 10;
+	top: 5;
+}
+
+
+</style>

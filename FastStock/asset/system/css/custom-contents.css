@@ -1,0 +1,103 @@
+#content-wrapper{
+	margin-left: 200px;
+	margin-top: 50px;
+}
+
+.content-top{
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	margin: 0px;
+	background: white;
+	position: fixed;
+	z-index: 1;
+	display: inline-block;
+	margin-top: 0px;
+
+}
+
+.content-top h2{
+	display
+	]: block;	
+	float: left;
+}
+
+.content-top h4{
+	float: left;
+	display: block;
+	padding-top: 23px;
+	padding-left: 10px;
+}
+
+a.add-button{
+	width: 30%;
+	float: right;
+	position: block;
+	color: white;	
+}
+
+a.add-button button{
+	position: inline-block;
+	border: none;
+	margin-top: 15px;
+	margin-left: 2.5em;
+	padding: 10px;
+	background-color: #1d6ee5;	
+}
+
+a.add-button button i{
+	padding-right: 10px;	
+}
+
+
+.content-main{
+	width: 90%;
+	margin: 120px 5% 0px 5%;
+	background: white;
+	border-color: #ddd;
+	border-radius: 4px;
+	position: relative;
+	padding: 15px;
+	float: left;
+	min-height: 100%;	
+}
+
+button.Disable{
+	padding: 5px;
+	border: none;
+	background-color: #CF000F;
+	color: white;
+	width: 110%;
+}
+
+button.Active{
+	padding: 5px;
+	border: none;
+	background-color: #2ECC71;
+	color: white;
+	width: 100%;
+}
+
+button.Posted{
+	padding: 5px;
+	border: 1.5px solid #16A085;
+	background-color: #fff;
+	color: #16A085;
+	width: 100%;
+}
+
+button.draft{
+	padding: 5px;
+	border: 1.5px solid #2980B9;
+	background-color: white;
+	color: #2980B9;
+	width: 100%;
+}
+
+.table > tbody > tr > td.active:hover,
+.table > tbody > tr > th.active:hover,
+.table > tbody > tr.active:hover > td,
+.table > tbody > tr.active:hover > th {
+  background-color: #67809F;
+}
+

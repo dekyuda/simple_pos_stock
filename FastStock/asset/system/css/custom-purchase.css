@@ -1,0 +1,364 @@
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #55729c;
+}
+
+table#stock_in_detail{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	max-width: 100%;
+}
+
+table#stock_in_detail tbody{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	max-width: 100%;
+}
+
+.content-top{
+	max-width: 100%;
+	width: 100%;
+	display: inline-block;
+	box-shadow: 0 2px 2px -2px gray;
+}
+
+.top-title{
+	float: left;
+	width: 50%;
+}
+
+.top-button{
+	float: right;
+	width: 50%;
+	right: 0;
+	//margin-right: -webkit-calc(-5%+30px);
+	//margin-right: -8%;
+	margin-top: 1.2em;
+}
+
+.top-button > input.submit{
+	border: none;
+	background-color: #008b07;
+	color: #fff;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: absolute;
+	right: 330;
+}
+
+.top-button > input.save{
+	border: none;
+	background-color: #183ede;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.top-button > button.cancel{
+	border: none;
+	background-color: #D91E18;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: absolute;
+	right: 250;
+}
+
+button.cancel a{
+	text-decoration: none;
+	color: white;
+
+}
+
+.content-message{
+	width: 100%;
+	padding: 0px;
+}
+
+.error-message{
+	width: 100%;
+	max-width: 100%;
+	background-color: #E84B3A;
+	color: #FFF;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.success-message{
+	width: 100%;
+	background-color: #27AE60;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.content-main{
+	width: 100%;
+	min-height: calc(100% + 10%);
+	border-radius: 0px;
+	margin-top: 100px;
+	margin-left: 0px;
+}
+
+input{
+	max-width: 100%;
+}
+
+table{
+	float: left;
+}
+
+.total{
+	float: left;
+	width: 100%;
+}
+
+table#total{
+	float: left;
+	width: 100%;
+	max-width: 100%;
+}
+
+.form-goup.side1{
+	width: 70%;
+	max-width: 70%;
+	float: left;
+}
+
+.form-group.side2{
+	width: 30%;
+	max-width: 30%;
+	float: right;
+}
+
+.product-detail{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.stock-in{
+	display: block;
+	width: 100%;
+}
+
+.stock-in-header{
+	float: left;
+	width: 400px;
+}
+
+.stock-in-header2{
+	float: left;
+	width: auto;
+}
+
+.in-header{
+	display: table;
+	padding: 10px;
+}
+
+.in-header2{
+	display: table;
+	padding: 10px;
+	width: 100%;
+}
+
+.in-header > .left{
+	width: 100px;
+	float: left;
+	padding-right: 15px;
+
+
+}
+
+.in-header > .right{
+	width: auto;
+	float: left;
+}
+
+.in-header2 > .left{
+	width: 100px;
+	float: left;
+	padding-right: 15px;
+}
+
+.in-header2 > .right{
+	max-width: 100%;
+	float: left;
+}
+
+input[type="text"].po_remark{
+	width: 500px;
+}
+
+.stock-in-main{
+	display: table;
+	width: 100%;
+}
+
+.stock-in-main > .table{
+	width: 100%;
+	display: table;
+	margin-top: 50px;
+	//border: 1px solid #000;
+}
+
+.stock-in-main > input{
+	border-radius: 2px;
+	border-color: #6b85ac;
+	height: 100%;
+}
+
+input.po_date{
+	height: 25px;
+}
+
+.table > .thead{
+	float: left;
+	width: 100%;	
+	padding: 10px;
+	font-weight: bold;
+	border-bottom: 2px solid #4c6385;
+	border-top: 2px solid #4c6385;
+}
+
+.tbody{
+	float: left;
+	width: 100%;
+	padding-top: 0.5em;
+	//border-bottom: 2px solid #000;
+}
+
+div.tbody:nth-child(even){
+	float: left;
+	width: 100%;
+	padding-top: 0.5em;
+	background-color: #fff;
+	border-top: 1px solid #6b85ac;
+}
+
+div.tbody:nth-child(odd){
+	float: left;
+	width: 100%;
+	padding-top: 0.5em;
+	background-color: #fff;
+	border-top: 1px solid #6b85ac;
+}
+
+.cell{
+	float: left;
+	width: auto;
+	padding: 0.5em;
+}
+
+.cell.cell1{
+	float: left;
+	width: 20%;
+}
+
+.cell.cell2{
+	float: left;
+	width: 10%;
+}
+
+.cell.cell3{
+	float: left;
+	width: 15%;
+}
+
+.cell.cell4{
+	float: left;
+	width: 5%;
+}
+
+.cell.cell5{
+	float: left;
+	width: 5%;
+}
+
+.cell.cell6{
+	float: left;
+	width: 15%;
+}
+
+.cell.cell7{
+	float: left;
+	width: 5%;
+}
+
+.cell.cell8{
+	float: left;
+	width: 5%;
+}
+
+.cell.cell9{
+	float: left;
+	width: 15%;
+}
+
+.cell.cell10{
+	float: left;
+	width: 5%;
+}
+
+.cell.cell10{
+	cursor: pointer;
+}
+
+input[type=text].name{
+	width: 100%;
+}
+
+/* style for stock in footer */
+.stock-in-footer{
+	display: inline-block;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.note{
+	float: left;
+	width: 50%;
+	
+}
+
+.pay{
+	float: left;
+	width: 50%;
+}
+
+.pay-title{
+	float: left;
+	width: auto;
+}
+
+.pay-main{
+	float: left;
+	width: auto;
+	margin-left: 15px;
+}
+
+select{
+	height: 25px;
+}
+
+input[type=number].po_grandtotal{
+	float: left;
+	width: 200px;
+	border: none;
+	text-align: right;
+
+}
+
+.pay-main input[type=number]{
+	text-align: right;
+	width: 200px;
+}

@@ -1,0 +1,261 @@
+<style>
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #55729c;
+}
+
+textarea{
+	outline: none;
+	resize: none;
+}
+
+.content-top{
+	max-width: 100%;
+	width: 100%;
+	display: inline-block;
+	box-shadow: 0 2px 2px -2px gray;
+
+}
+
+.top-button{
+	position: inherit;
+	float: right;
+	right: 50;
+}
+
+button.submit{
+	padding: 15px;
+	color: white;
+	background-color: #27AE60;
+	border: none;
+	font-weight: bold;
+}
+
+button.cancel{
+	padding: 15px;
+	color: white;
+	background-color: #E74C3C;
+	border: none;
+	font-weight: bold;
+}
+
+.cancel a{
+	color: white;
+
+}
+
+.content-main{
+	width: 100%;
+    min-height: calc(100% + 10%);
+    border-radius: 0px;
+    margin-top: 100px;
+    margin-left: 0px;
+
+}
+
+.opaname{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+/* Header */
+.opname-header{
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 0.5em;
+	padding-left: 10%;
+}
+
+.header-title{
+	display: inline-block;
+}
+
+.op-id{
+	display: inline-block;
+	float: right;
+}
+
+.form-group{
+	display: block;
+	position: relative;
+	padding: 1em;
+	padding-left: 0em;
+}
+
+.form-group.button{
+	margin-top: 20px;
+}
+
+.title{
+	float: left;
+	width: 10em;
+	font-weight: bold;
+}
+
+.title2{
+	float: left;
+	width: 1em;
+	font-weight: bold;
+}
+
+.input{
+	float: left;
+	width: calc(100% - 1em - 10em);
+}
+
+/* Main */
+.opname-main{
+
+}
+
+.tb-opname{
+	display: table;
+	width: 90%;
+	max-width: 90%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.tb-head{
+	display: table;
+	width: 100%;
+	border-top: 2px solid black;
+	border-bottom: 1.5px solid black;
+	padding: 1em;
+
+}
+
+.cell1{
+	width: 20%;
+	float: left;
+}
+.cell2{
+	width: 30%;
+	float: left;
+}
+.cell3{
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+.cell4{
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+.cell5{
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+.cell6{
+	width: 20%;
+	float: left;
+}
+
+.cell3.main{
+	line-height: 2.5em;
+}
+
+.main-main{
+	float: left;
+	width: 100%;
+	height: 3em;
+	padding: 0.3em;
+	padding-left: 1em;
+	border-bottom: 1.3px solid #000;
+
+}
+
+
+/* Input */
+input {
+	width: 90%;
+	height: 100%;
+}
+
+textarea{
+	height: 100%;
+}
+
+input.opn-date{
+	height: 30px;
+	width: 30%;
+}
+
+input.opn-remark{
+	height: 30px;
+	width: 70%;
+}
+
+select.type-detail{
+	display: none;
+}
+
+input.realqty{
+	border: none;
+	//border-bottom: 1px solid #000;
+	text-align: center;
+}
+
+input.difqty{
+	border: none;
+	text-align: center;
+}
+
+/* Error Message */
+h2.error-message{
+	text-align: center;
+	color: lightgrey;
+}
+
+h2.no-found{
+	text-align: center;
+	color: lightgrey;
+}
+
+/* Message */
+.message{
+	display: block;
+	position: relative;
+	width: 80%;
+}
+
+.message-error{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #D1404A;
+	color: white;
+	font-weight: bold;
+	z-index: 10001;
+	width: 80%;
+	height: 100px;
+	text-align: center;
+	line-height: 3;
+	font-size: 24px
+}
+
+.message-success{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #27AE60;
+	color: white;
+	font-weight: bold;
+	z-index: 10001;
+	width: 80%;
+	height: 100px;
+	text-align: center;
+	line-height: 3;
+	font-size: 24px
+}
+
+
+</style>
