@@ -66,5 +66,22 @@ class Pos extends CI_Controller{
 
 		echo json_encode($display);
 	}
+
+	function byAll(){
+		$value = $this->m_pos->get_product();
+		$display = array();
+
+		foreach($value->result() as $val){
+			$display[] = array(
+					'id_product' => $val->id_product,
+					'product_name' => $val->product_name,
+					'product_category' => $val->product_category,
+					'product_price' => $val->product_price
+				);
+		}
+
+		echo json_encode($display);
+
+	}
 }
 ?>

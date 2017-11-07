@@ -414,7 +414,7 @@
 		input:read-only{
 			border: none;
 			float: left;
-			margin-left: -60px;
+			margin-left: -30px;
 			font-weight: bold;
 			text-align: right;
 			color: black;
@@ -443,39 +443,30 @@
 			width: 100%;
 			display: block;
 			margin: auto;
+			margin-bottom: 20px;
 		}
 
-		
-
-		button.save{
-			width: 30%;
-			border: none;
-			background-color: green;
-			padding: 10px;
-			margin-left: 5%;
-		}
-
+				
 		button.cancel{
-			width: 30%;
+			width: 15%;
 			border: none;
 			background-color: red;
 			padding: 10px;
+			font-weight: bold;
 		}
-
-		button.note{
-			width: 30%;
-			border: none;
-			background-color: grey;
-			padding: 10px;
-		}
+		
 
 		button.pay{
-			width: 92%;
+			width: 70%;
 			border: none;
 			margin: auto;
 			margin-top: 10px;
 			margin-left: 5%;
-			margin-right: 5%;
+			margin-right: 2%;
 			padding: 10px;
 			background-color: #3498DB;
+		}
+
+		ul.price-list{
+			margin-right: 20px;
 		}

@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Fast POS</title>
+	<title>SIMPLE POS</title>
 
 	<!-- CSS Plugin -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>asset/system/css/font-awesome.css">
@@ -40,9 +40,9 @@
 		<div class="product">
 			<div class="category">
 				<ul>
-					<li type=""> All Product</li>
+					<li type="" class="p-list"> All Product</li>
 				<?php foreach($category->result() as $cat){
-					echo "<li type='".$cat->category_name."'>$cat->category_name</li>";
+					echo "<li type='".$cat->category_name."' class='p-list'>$cat->category_name</li>";
 				}
 				?>
 				</ul>
@@ -129,15 +129,16 @@
 					</ul>			
 					</div>
 					<div class="total-price">
-						<ul>
+						<ul class="price-list">
 							<li><lable class="subtotal">
 							<input type="number" class="order-subtotal" name="sub-total" readonly value="0" min="0">
 							</lable></li>
 							<li><lable>
-							<input type="text" class="order-discount" name="disc-total" value="0" min="0">
+								<button>0%</button>
 							</lable></li>
 							<li><lable>
-							<input type="text" class="order-taxtotal" name="tax-total" value="0" min="0"></lable></li>
+								<button>0%</button>
+							</lable></li>
 							<li><lable>
 							<input type="number" readonly class="order-grandtotal" name="grand-total" value="0" min="0"></lable></li>
 						</ul>	
@@ -145,10 +146,9 @@
 					</div>
 				</div>
 				<div class="button">
-					<button class="save">SAVE</button>
-					<button class="cancel">CANCEL</button>
-					<button class="note">NOTE</button>
 					<button class="pay">PAY</button>
+					<button class="cancel">X</button>
+										
 				</div>	
 			</div>
 		</div>
@@ -350,10 +350,30 @@ $(document).ready(function(){
 	//$('.order-subtotal').maskMoney({thousands:'.', decimal:',', precision:0});
 
 	/*function on select category*/
-	$('li').on('click', function(){
+	$('li.p-list').on('click', function(){
 		var data = $(this).attr('type');
 
-		$.ajax({
+		if(data == ""){
+			$.ajax({
+				type: 'post',
+				url: 'pos/byAll',
+				dataType: 'json',
+				data: {'id':data},
+				success: function(response){
+					$('.grid-product').fadeOut('fast');
+					$.each(response, function(key, val){
+						if(Object.keys(val.id_product).length > 0){
+							$('.list-product').append("<div class='grid-product'>"+val.product_name+"</div>");
+						}
+						else{
+							$('.list-product').html("<h2>Not Found</h2>");
+						}
+					});
+				}
+			});
+		}
+		else{
+			$.ajax({
 			type: 'post',
 			url: 'pos/byCategory',
 			dataType: 'json',			
@@ -370,9 +390,12 @@ $(document).ready(function(){
 						$('.list-product').html("<h2>Product Not Found</h2>");
 					}
 					
-				});
-			}
-		});
+					});
+				}
+			});
+		}
+
+		
 	});
 
 	
